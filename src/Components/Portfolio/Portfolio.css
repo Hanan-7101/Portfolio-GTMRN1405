@@ -1,0 +1,69 @@
+.work{
+    background:linear-gradient(45deg ,#212121,#bdbdbd);
+    min-height: 100vh;
+    Width: 100%;
+
+}
+@media(min-width:50em){
+.work_section{
+    padding:15px;
+    display: grid; 
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    gap: 1.5em;
+}
+}
+
+.cards{
+    position: relative;
+    cursor:pointer;
+    border: 3px solid rgb(78, 61, 61);
+    width: 100%;
+    height:100%;
+
+
+
+
+
+}
+.cards img{
+    width: 100%;
+    height:100%;
+}
+.cards :hover img{
+    opacity: 0.6;
+}
+.cards:hover button{
+    opacity: 1;
+    transition: 500ms;
+}
+.cards button{
+
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,50%);
+    background:transparent;
+    border: 3px solid #fff;
+    padding:10px 20px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    opacity: 0;
+    
+  
+    }
+   .cards button :hover{
+        background: #fff;
+        color: firebrick;
+    
+    }
+.h13{
+    font-size: 100px;
+    padding-top: 3rem;
+    padding-left: 3rem;
+    padding-bottom: 2rem;
+    color: #fff;
+
+}

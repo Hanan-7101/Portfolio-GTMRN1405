@@ -1,0 +1,103 @@
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+   
+    
+}
+.h_logo{
+    margin-left: 3.44rem;
+    color: aliceblue;
+}
+
+.navbar{
+    margin: 0 auto;
+}
+ul{
+    display: flex;
+   
+    }
+    a{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+       
+     
+    }
+    li{
+        list-style: none;
+        margin: 1rem;
+     
+      
+    }
+     li:hover{
+        border-bottom: 3px solid red;
+    }
+    .changer {
+        display: flex;
+        margin-right: 1.55rem;
+
+    
+    }
+    .menu{
+        cursor: pointer;
+        display: none;
+    }
+
+    .closed .close{
+  
+    display: none;
+    color: aliceblue;
+   
+    }
+    
+  @media (max-width:850px) {
+    .header{
+        justify-content: space-between; 
+    }
+    .navbar{
+        display: none;
+
+    }
+
+    .navbar.active{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        inset: 0;
+        background-color: #283593;
+    }
+    ul {
+        margin:  0 auto;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 1rem;
+       
+
+    }
+    li{
+        margin-block: 2rem;
+      
+    }
+    a{
+        font-size: 20px;
+      color :white;
+        font-weight: bolder;
+    }
+    .menu{
+        
+            display: block;
+        }
+     
+    
+   .close{
+       
+            display: block;
+        
+    }
+}
+
+
